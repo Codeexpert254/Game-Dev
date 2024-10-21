@@ -1,0 +1,108 @@
+.testimonial-section {
+  justify-content: space-between;
+  display: flex;
+  gap: 106px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.testimonial-section .testimonial-card {
+  position: relative;
+  border-radius: 24px;
+  background: var(--white-color);
+  box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  z-index: 10;
+}
+
+.testimonial-section .vertical-line {
+  width: 28px;
+  height: 546px;
+  background-color: var(--dark-blue-color);
+  border-radius: 40px;
+  margin-top: 50px;
+  z-index: 1;
+  top: -50px;
+  left: 87px;
+  position: absolute;
+}
+
+.testimonial-section .testimonial-card .content {
+  color: var(--white-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  border-radius: 24px;
+  background: var(--light-blue-color);
+  padding: 24px 32px;
+}
+
+.testimonial-section .testimonial-card:nth-child(2) .content {
+  background: var(--orange-color) !important;
+}
+
+/* .testimonial-card:last-of-type .content {
+  background: var(--orange-color) !important;
+} */
+
+/* .testimonial-section .left .testimonial-card:last-of-type .content {
+  background: var(--orange-color) !important;
+  transform: translateX(20px);
+} */
+
+/* .testimonial-card:nth-child(2) {
+  transform: translateX(20px);
+} */
+
+.testimonial-section .info {
+  color: var(--dark-blue-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0 32px;
+  padding-bottom: 50px;
+}
+
+.info h4,
+.info p {
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-bottom: 8px;
+}
+
+.testimonial-card img {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  right: 20px;
+  bottom: 32px;
+}
+
+.testimonial-section .right h2 {
+  color: var(--dark-blue-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 120%; /* 72px */
+}
+
+.testimonial-section .right p {
+  color: var(--dark-blue-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%; /* 32px */
+}
+
+.testimonial-card .info p.company {
+  color: var(--dark-blue-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+
+  padding: 5;
+}
+
+.mobile-btn {
+  display: none;
+}

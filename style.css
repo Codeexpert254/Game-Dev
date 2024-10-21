@@ -198,89 +198,87 @@ nav ul li a {
 
 /* Testimonial Section */
 .testimonial-section {
-  justify-content: space-between;
   display: flex;
-  gap: 106px;
+  gap: 134px;
+  align-items: center;
   margin-top: 100px;
   position: relative;
 }
 
-.testimonial-card {
-  position: relative;
+.testimonial-section .testimonial-card {
+  width: 442px;
   border-radius: 24px;
-  background: var(--white-color);
+  background: #fff;
   box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.2);
   margin-top: 50px;
-  z-index: 10;
+  position: relative;
 }
 
-.testimonial-section .vertical-line {
-  width: 28px;
-  height: 546px;
-  background-color: var(--dark-blue-color);
-  border-radius: 40px;
-  margin-top: 50px;
-  z-index: 1;
-  top: -50px;
-  left: 87px;
-  position: absolute;
+h2 {
+  color: #023047;
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+h2.light {
+  color: var(--white-color);
+  text-align: center;
 }
 
 .testimonial-section .testimonial-card .content {
-  color: var(--white-color);
+  color: #fff;
   font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 900;
   border-radius: 24px;
   background: var(--light-blue-color);
   padding: 24px 32px;
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
+}
+
+.testimonial-section .testimonial-card .info h4 {
+  color: var(--dark-blue-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
   margin: 0;
+}
+
+.testimonial-section .testimonial-card .info {
+  padding: 24px 32px;
+}
+
+.testimonial-section .testimonial-card p.company {
+  color: #023047;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.testimonial-section .testimonial-card img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 32px;
+  bottom: 20px;
 }
 
 .testimonial-section .testimonial-card:nth-child(2) .content {
   background: var(--orange-color);
 }
 
-.left .last-child {
-  margin-left: 20px;
+.testimonial-section .testimonial-card:nth-child(2) {
+  transform: translateX(20px);
 }
 
-.testimonial-section .info {
-  color: var(--dark-blue-color);
-  font-family: "Raleway", sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  margin: 0 32px;
-  padding-bottom: 50px;
-}
-
-.info h4,
-.info p {
-  margin-top: 10px;
-  margin-left: 0px;
-  margin-bottom: 8px;
-}
-
-.testimonial-card .image-container {
+.testimonial-section .left .vertical-line {
+  height: 570px;
+  border: 15px solid var(--dark-blue-color);
+  border-radius: 20px;
   position: absolute;
-  width: 120px;
-  height: 120px;
-  top: 60px;
-  right: 20px;
-  padding: 0 32px;
-  margin-right: 32px;
-  z-index: 100;
-}
-
-.testimonial-section .right h2 {
-  color: var(--dark-blue-color);
-  font-family: "Raleway", sans-serif;
-  font-size: 60px;
-  font-weight: 900;
-  line-height: 120%; /* 72px */
+  top: 0;
+  left: 90px;
+  z-index: -1;
 }
 
 .testimonial-section .right p {
@@ -288,48 +286,80 @@ nav ul li a {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 200%; /* 32px */
+  margin-top: 16px;
 }
 
-.testimonial-card .info .company {
-  color: var(--dark-blue-color);
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-
-  padding: 5;
+.testimonial-section .right a {
+  padding: 16px 32px;
+  margin-top: 30px;
 }
 
-.mobile-btn {
+.testimonial-section .mobile-btn {
   display: none;
 }
+
 /* Courses Section */
 .courses-section {
   background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
   margin-top: 100px;
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+  padding-top: 10px;
+  width: 1366px;
+  height: 785px;
+  flex-shrink: 0;
 }
 
 .course-cards {
   display: flex;
   gap: 73px;
+  justify-content: center;
 }
 
 .course-card {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  width: 462px;
   border-radius: 24px;
-  background: var(--white-color);
-  margin-bottom: 40px;
-  position: relative;
+  background: #fff;
   display: flex;
   width: 526px;
   padding: 0px 32px;
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-  height: 472px;
+}
+
+.course-card img {
+  border-radius: 24px;
+}
+
+.course-card .info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  flex: 1 0 0;
+}
+
+/* .wrapper .light {
+  padding-top: 70px;
+} */
+
+.course-card .info h3 {
+  width: 100%;
+  color: #023047;
+  font-family: Raleway;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%; /* 45px */
+  flex: 1 0 0;
+}
+
+.course-card .info .duration {
+  color: #023047;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
 }
 
 .course-card .info img {
@@ -337,55 +367,25 @@ nav ul li a {
   height: 20px;
 }
 
-.course-card .info h3 {
-  color: var(--dark-blue-color);
-  font-family: "Raleway", sans-serif;
-  font-size: 30px;
-  font-weight: 900;
-}
-
-.course-card .info {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-grow: 1;
-  /* min-height: 130px; */
-}
-
-.course-card .info .duration {
-  color: var(--dark-blue-color);
-  font-family: Raleway;
-  font-size: 16px;
-  font-weight: 900;
-  white-space: nowrap;
-}
-
 .course-card .horizontal-line {
   border-radius: 24px;
-  border-bottom: 8px solid var(--dark-blue-color);
-  width: 100%;
+  background: #023047;
   height: 8px;
-  /* margin-top: 30px; */
+  align-self: stretch;
 }
 
-.courses-section h2.light {
-  color: var(--white-color);
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-size: 60px;
-  font-weight: 900;
-  line-height: 120%; /* 72px */
-  padding-top: 70px;
+.course-card .time-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-
 .courses-section .btn.light {
-  /* float: right; */
-  /* position: absolute; */
+  display: inline-flex;
   padding: 16px 32px;
-  margin-bottom: 70px;
-  margin-right: 32px;
-  right: 0;
-  align-self: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+  float: right;
+  margin-top: 40px;
 }
 
 /* App Section */
